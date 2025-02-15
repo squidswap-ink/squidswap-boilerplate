@@ -1,0 +1,5 @@
+We are building a boilerplate for Next.js + Ethers.js + App Router. We use @inkonchain/ink-kit for the UI components and theming. 
+
+Build this so the most novice user could git clone and edit the build.
+
+Formulate sections that are easily editable by someone who has never known to code, include good comments to explain what is happening.
