@@ -1,4 +1,5 @@
-import { EthersAdapter } from '@reown/appkit-adapter-ethers'
+import { cookieStorage, createStorage } from '@wagmi/core'
+import { WagmiAdapter } from '@reown/appkit-adapter-wagmi'
 import { ink } from '@reown/appkit/networks'
 import type { AppKitNetwork } from '@reown/appkit/networks'
 
@@ -9,6 +10,15 @@ if (!projectId) {
   throw new Error('Project ID is not defined')
 }
 
-export const networks = [ink] as [AppKitNetwork, ...AppKitNetwork[]]
+export const networks: [AppKitNetwork] = [ink];
 
-export const ethersAdapter = new EthersAdapter();
+export const wagmiAdapter = new WagmiAdapter({
+  storage: createStorage({
+    storage: cookieStorage
+  }),
+  ssr: true,
+  projectId,
+  networks
+})
+
+export const config = wagmiAdapter.wagmiConfig
