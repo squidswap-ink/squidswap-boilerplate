@@ -151,7 +151,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Check out the [Next.js Documentation](https://nextjs.org/docs)
 - Learn about [Ethers.js](https://docs.ethers.org/)
-- Explore [@inkonchain/ink-kit Documentation](https://your-ui-kit-docs-url.com)
+- Explore [@inkonchain/ink-kit Documentation](https://ink-kit.inkonchain.com/)
 
 
 ## ⭐️ Show Your Support
